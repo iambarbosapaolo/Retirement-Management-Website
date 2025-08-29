@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Mission", href: "#mission" },
   { label: "Services", href: "#services" },
   { label: "Socials", href: "#socials" },
-  { label: "Contacts", href: "#contacts" },
+  { label: "Contacts", href: "#contacts", isButton: true }, // 👈 mark Contacts as button
 ];
 
 export default function Navbar() {
@@ -51,7 +51,7 @@ export default function Navbar() {
       {/* Logo */}
       <div className="navbar-logo">
         <img src="/images/advrmslogo.png" alt="Logo" className="logo-icon" />
-        <div class="seventh-day">
+        <div className="seventh-day">
           Seventh-day
           <div>Adventist Church</div>
         </div>
@@ -70,11 +70,17 @@ export default function Navbar() {
 
       {/* Links */}
       <div className={`navbar-links ${isOpen ? "show" : ""}`}>
-        {navLinks.map(({ label, href }) => (
+        {navLinks.map(({ label, href, isButton }) => (
           <div key={label} className="nav-item">
             <a
               href={href}
-              className={activeLink === href ? "active" : ""}
+              className={
+                isButton
+                  ? "contacts-btn" // 👈 special button style for Contacts
+                  : activeLink === href
+                  ? "active"
+                  : ""
+              }
               onClick={(e) => handleClick(e, href)}
             >
               {label}

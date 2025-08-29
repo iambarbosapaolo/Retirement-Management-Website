@@ -5,9 +5,9 @@ export default function Mission() {
   return (
     <section id="mission" className="mission-section">
       <h2 className="mission-heading">Our mission</h2>
-      <p className="mission-statement">
+      <div className="mission-statement">
         We believe retirement should bring security, purpose, and peace of mind.
-      </p>
+      </div>
       <div className="mission-cards-container">
         <div className="mission-card">
           <img
