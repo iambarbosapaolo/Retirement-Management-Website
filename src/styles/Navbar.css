@@ -1,0 +1,139 @@
+/* Navbar container with transparency */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  /* Semi-transparent dark navy with frosted glass */
+  background-color: rgba(15, 23, 42, 0.575); /* 70% opacity */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+}
+.seventh-day {
+  font-size: 18px;
+  font-weight: normal;
+  color: #e2e8f0;
+}
+/* Logo icon image */
+.logo-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Logo container */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #38bdf8;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-logo:hover {
+  color: #60a5fa;
+  transform: scale(1.05);
+}
+
+/* Links container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Links */
+.navbar-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #38bdf8;
+  transform: translateY(-2px);
+}
+
+/* Contact Button */
+.navbar-btn {
+  background: #000000;
+  color: #fff !important;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+
+/* Hamburger Menu Icon */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: transparent;
+  border: none;
+}
+
+.navbar-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+
+    /* Make mobile menu transparent as well */
+    background-color: #0f172a3a;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1.5rem;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .navbar-links.show {
+    display: flex;
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .navbar-links li {
+    margin: 0;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}

@@ -1,0 +1,71 @@
+/* Section background */
+.contacts-section {
+  background-color: #f9fafb; /* light gray */
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container */
+.contacts-container {
+  max-width: 700px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* Heading */
+.contacts-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937; /* gray-900 */
+  margin-bottom: 0.75rem;
+}
+
+/* Subtitle */
+.contacts-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563; /* gray-700 */
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.contacts-button {
+  background-color: #B28A5B; /* brown accent */
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contacts-button:hover {
+  background-color: #9a744c;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .contacts-container {
+    padding: 1.5rem;
+  }
+
+  .contacts-heading {
+    font-size: 1.5rem;
+  }
+
+  .contacts-subtitle {
+    font-size: 1rem;
+  }
+
+  .contacts-button {
+    width: 100%;
+    max-width: 250px;
+  }
+}

@@ -1,0 +1,159 @@
+.footer-container {
+  background-color: #1a1a1a;
+  color: #a9a9a9;
+  font-family: Arial, sans-serif;
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+
+.footer-section {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-section {
+    width: auto;
+    flex-basis: auto;
+  }
+}
+
+.brand-section {
+  display: none; /* Hidden on mobile */
+}
+
+@media (min-width: 768px) {
+  .brand-section {
+    display: block;
+    width: 100px;
+  }
+}
+
+.footer-logo svg {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-section h4 {
+  color: #f0f0f0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Stay In Touch section */
+.stay-in-touch p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.subscribe-box {
+  display: flex;
+  border: 1px solid #444;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.subscribe-box input {
+  flex-grow: 1;
+  border: none;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.subscribe-box input::placeholder {
+  color: #777;
+}
+
+.subscribe-box button {
+  background-color: #4b0082; /* Deep purple */
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  color: #fff;
+}
+
+.subscribe-box button svg {
+  transform: rotate(-45deg); /* Arrow icon rotation */
+}
+
+/* Link columns */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #a9a9a9;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffc107; /* Gold color */
+}
+
+/* Bottom section */
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: #a9a9a9;
+  font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #777;
+}

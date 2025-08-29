@@ -1,0 +1,51 @@
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.mission-heading {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.mission-statement {
+  font-size: 2.25rem;
+  font-weight: 600;
+  max-width: 700px;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.mission-cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.mission-card-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: #333;
+}
